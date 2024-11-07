@@ -1,0 +1,155 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan font dan warna */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #f4f4f4;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Latar belakang video fullscreen */
+#video-background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video-1,
+#background-video-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Tema terang dan gelap */
+.theme-light {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.theme-dark {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+/* Tombol toggle tema */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffffffcc;
+    transition: color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    color: #3498db;
+}
+
+/* Kartu utama */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Input form */
+input[type="text"], input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.08);
+    color: #f4f4f4;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
+    background: rgba(255, 255, 255, 0.15);
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Tombol */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4e73df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e59d9;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Tabel daftar buku */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Spasi antar baris */
+}
+
+table, th, td {
+    border: none;
+}
+
+table th, table td {
+    padding: 12px;
+    color: #f4f4f4;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table tr:hover td {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
